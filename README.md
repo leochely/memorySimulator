@@ -1,2 +1,3 @@
-# memorySimulator
-CSCI 442 Project 2
+# Project 3
+
+A simulation of a trival OS memory manager.
