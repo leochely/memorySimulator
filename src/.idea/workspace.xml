@@ -9,7 +9,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16f14be0-6ab8-464d-bf86-ad12038f5b40" name="Default Changelist" comment="" />
+    <list default="true" id="16f14be0-6ab8-464d-bf86-ad12038f5b40" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/process.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/process/process.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/process.h" beforeDir="false" afterPath="$PROJECT_DIR$/process/process.h" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +38,29 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/flag_parser/flag_parser.cpp">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="678">
-                  <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+                <state relative-caret-position="391">
+                  <caret line="23" selection-start-line="23" selection-end-line="23" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/process/process.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-172">
+                  <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/process/process.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
                 </state>
               </provider>
             </entry>
@@ -54,8 +76,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/virtual_address/virtual_address.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/flag_parser/flag_parser.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/process/process.h" />
+        <option value="$PROJECT_DIR$/process/process.cpp" />
       </list>
     </option>
   </component>
@@ -165,12 +189,12 @@
       <updated>1554945471521</updated>
       <workItem from="1554945472606" duration="105000" />
       <workItem from="1554945691926" duration="29000" />
-      <workItem from="1555113700958" duration="2211000" />
+      <workItem from="1555113700958" duration="4387000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2345000" />
+    <option name="totallyTimeSpent" value="4521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -206,16 +230,10 @@
     <entry file="file://$PROJECT_DIR$/simulation/simulation.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/process/process.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/physical_address/physical_address.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/page_table/page_table.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page_table/page_table.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/flag_parser/flag_parser_tests.cpp">
@@ -243,10 +261,10 @@
         <state relative-caret-position="-410" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/flag_parser/flag_parser.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        <state relative-caret-position="661">
+          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -255,10 +273,29 @@
         <state relative-caret-position="-257" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flag_parser/flag_parser.cpp">
+    <entry file="file://$PROJECT_DIR$/process/process.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_table/page_table.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/process.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-172">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>

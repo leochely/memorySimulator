@@ -9,9 +9,9 @@
 using namespace std;
 
 
-Process* Process::read_from_input(std::istream& in) {
+Process Process::read_from_input(std::istream& in) {
   // TODO: implement me
-  return nullptr;
+  return null;
 }
 
 

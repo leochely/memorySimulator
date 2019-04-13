@@ -14,11 +14,16 @@ using namespace std;
  * The main entry point to the simulation.
  */
 int main(int argc, char** argv) {
+    string file;
+
+    FlagOptions flagOptions;
+    parse_flags(argc, argv, flagOptions);
+
+    ifstream input(file);
 
 
 
     Simulation simulation;
-
     simulation.run();
 
     return EXIT_SUCCESS;
