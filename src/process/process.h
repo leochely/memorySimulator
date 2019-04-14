@@ -19,7 +19,7 @@ public:
   /**
    * Instantiates a new Process by reading from the given istream.
    */
-  static Process read_from_input(std::istream& in);
+  static Process* read_from_input(std::istream& in);
 
   /**
    * Returns the total size of this process, in bytes.
@@ -65,7 +65,7 @@ public:
   /**
    * The pages that constitute this process' process image.
    */
-  const std::vector<Page> pages;
+  const std::vector<Page*> pages;
 
   /**
    * The page table for this process.

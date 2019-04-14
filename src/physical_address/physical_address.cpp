@@ -5,17 +5,20 @@
  */
 
 #include "physical_address/physical_address.h"
+#include <bitset>
 
 using namespace std;
 
 
 string PhysicalAddress::to_string() const {
-  // TODO: implement me
-  return "";
+  std::bitset<FRAME_BITS> f(frame);
+  std::bitset<OFFSET_BITS> off(offset);
+
+  return f.to_string() + off.to_string();
 }
 
 
 ostream& operator <<(ostream& out, const PhysicalAddress& address) {
-  // TODO: implement me
+  out << address.to_string() << " [frame: " << address.frame << "; offset: " << address.offset << "]";
   return out;
 }

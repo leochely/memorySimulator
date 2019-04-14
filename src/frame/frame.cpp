@@ -5,10 +5,13 @@
  */
 
 #include "frame/frame.h"
+#include "page_table/page_table.h"
 
 using namespace std;
 
 
 void Frame::set_page(Process* process, size_t page_number) {
-  // TODO: implement me
+    this->page_number = page_number;
+    this->process = process;
+    contents = process->pages[page_number];
 }

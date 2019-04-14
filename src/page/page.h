@@ -51,7 +51,7 @@ public:
   char get_byte_at_offset(size_t offset);
 
 // PRIVATE METHODS
-private:
+
 
   /**
    * Private constructor.
