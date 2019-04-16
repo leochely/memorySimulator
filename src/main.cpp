@@ -4,10 +4,12 @@
  * run() method.
  */
 
+#include <iostream>
 #include <cstdlib>
 #include <vector>
 #include "flag_parser/flag_parser.h"
 #include "simulation/simulation.h"
+#include "virtual_address/virtual_address.h"
 #include <fstream>
 
 using namespace std;
@@ -19,15 +21,17 @@ int main(int argc, char** argv) {
     string file;
 
     FlagOptions flagOptions;
-    parse_flags(argc, argv, flagOptions);
+    if(!parse_flags(argc, argv, flagOptions)){
+        return -1;
+    }
+
+    vector<Process*> processes;
+    vector<VirtualAddress> addresses;
 
     ifstream input(file);
 
     int numProcesses;
     input >> numProcesses;
-
-    vector<int> processesID;
-    vector<string> processesFiles;
 
     for(int i = 0; i < numProcesses; ++i){
         int tempID;
@@ -36,16 +40,29 @@ int main(int argc, char** argv) {
         input >> tempID;
         input >> tempFile;
 
-        processesID.push_back(tempID);
-        processesFiles.push_back(tempFile);
+        ifstream tempProcessFile(tempFile);
+        Process* tempProcess = Process::read_from_input(tempProcessFile);
+
+        processes.push_back(tempProcess);
+    }
+
+    for(auto& process : processes){
+        cout << process << endl;
+    }
+
+    while(input.peek() != EOF){
+        int pid;
+        string address;
+
+        input >> pid;
+        input >> address;
+
+        VirtualAddress tempAddress = VirtualAddress::from_string(pid, address);
+        addresses.push_back(tempAddress);
+        cout << tempAddress << endl;
     }
 
 
-
-
-
-    Simulation simulation;
-    simulation.run();
 
     return EXIT_SUCCESS;
 }

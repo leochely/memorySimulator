@@ -81,4 +81,12 @@ public:
    * The number of page faults this process experienced.
    */
   size_t page_faults = 0;
+
+
+  /**
+   * PID
+   */
+
+  int pid;
+
 };

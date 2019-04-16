@@ -9,7 +9,7 @@
 #include "process/process.h"
 #include "virtual_address/virtual_address.h"
 #include <cstdlib>
-
+#include <vector>
 
 /**
  * Class responsible for running the memory simulation.
@@ -49,5 +49,5 @@ private:
 
 // INSTANCE VARIABLES
 private:
-
+    std::vector<Process*> processes;
 };

@@ -55,7 +55,7 @@ bool parse_flags(int argc, char** argv, FlagOptions& flags) {
         if(flag == -1){
             break;
         }
-//		string temp = optarg;
+
         switch (flag){
 
             case 'v':
@@ -68,16 +68,11 @@ bool parse_flags(int argc, char** argv, FlagOptions& flags) {
                 }else if(strategyType == "LRU"){
                     flags.strategy = ReplacementStrategy::LRU;
                 }else{
-                    //flags.strategy = ReplacementStrategy::FIFO; //unknown strategy uses FIFO
                     return false;
                 }
                 break;
             case 'f':
-
-//				if (temp.find_first_not_of( "0123456789" ) != std::string::npos){
-//					return false;
-//				}
-                frameNumber = stoi(optarg);
+                frameNumber = atoi(optarg);
                 if (frameNumber > 0){
                     flags.max_frames = frameNumber ;
                 }else{
@@ -90,12 +85,12 @@ bool parse_flags(int argc, char** argv, FlagOptions& flags) {
                 flags.filename = optarg;
                 break;
             case 'h':
-
                 print_usage();
                 break;
             case '?':
+                return false;
+                break;
             default:
-                //print_usage();
                 return false;
 
         }
