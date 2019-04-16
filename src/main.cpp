@@ -49,17 +49,17 @@ int main(int argc, char** argv) {
         cout << process << endl;
     }
 
-    while(input.peek() != EOF){
-        int pid;
-        string address;
+    int pid;
+    string address;
 
-        input >> pid;
+    while(input >> pid){
+
         input >> address;
 
         VirtualAddress tempAddress = VirtualAddress::from_string(pid, address);
         addresses.push_back(tempAddress);
         cout << tempAddress << endl;
     }
-    
+
     return EXIT_SUCCESS;
 }
