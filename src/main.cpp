@@ -18,7 +18,6 @@ using namespace std;
  * The main entry point to the simulation.
  */
 int main(int argc, char** argv) {
-    string file;
 
     FlagOptions flagOptions;
     if(!parse_flags(argc, argv, flagOptions)){
@@ -28,7 +27,7 @@ int main(int argc, char** argv) {
     vector<Process*> processes;
     vector<VirtualAddress> addresses;
 
-    ifstream input(file);
+    ifstream input(flagOptions.filename);
 
     int numProcesses;
     input >> numProcesses;
@@ -61,8 +60,6 @@ int main(int argc, char** argv) {
         addresses.push_back(tempAddress);
         cout << tempAddress << endl;
     }
-
-
-
+    
     return EXIT_SUCCESS;
 }
