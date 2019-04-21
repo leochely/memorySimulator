@@ -36,9 +36,6 @@ void Simulation::run(FlagOptions flagOptions) {
 
         ifstream tempProcessFile(tempFile);
         Process* tempProcess = Process::read_from_input(tempProcessFile);
-
-        if(flagOptions.verbose) cout << "Process " << tempID << ": " << tempProcess->size() << " bytes" << endl;
-
         processes.emplace(tempID, tempProcess);
     }
 
