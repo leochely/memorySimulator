@@ -25,7 +25,7 @@ Process* Process::read_from_input(std::istream& in) {
 
 
 size_t Process::size() const {
-  return num_bytes;
+    return num_bytes;
 }
 
 
@@ -45,5 +45,5 @@ size_t Process::get_rss() const {
 
 double Process::get_fault_percent() const {
   if(memory_accesses == 0.0) return 0.0;
-  return (100* page_faults / memory_accesses);
+  return (100* (double) page_faults / memory_accesses);
 }

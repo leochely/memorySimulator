@@ -55,7 +55,7 @@ public:
     /**
      * The 'virtual time' at which this page was loaded into memory.
      */
-    size_t loaded_at = -1;
+      size_t loaded_at = -1;
 
     /**
      * The 'virtual time' at which this page was last accessed. This is

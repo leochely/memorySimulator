@@ -24,42 +24,8 @@ int main(int argc, char** argv) {
         return -1;
     }
 
-    vector<Process*> processes;
-    vector<VirtualAddress> addresses;
-
-    ifstream input(flagOptions.filename);
-
-    int numProcesses;
-    input >> numProcesses;
-
-    for(int i = 0; i < numProcesses; ++i){
-        int tempID;
-        string tempFile;
-
-        input >> tempID;
-        input >> tempFile;
-
-        ifstream tempProcessFile(tempFile);
-        Process* tempProcess = Process::read_from_input(tempProcessFile);
-
-        processes.push_back(tempProcess);
-    }
-
-    for(auto& process : processes){
-        cout << process << endl;
-    }
-
-    int pid;
-    string address;
-
-    while(input >> pid){
-
-        input >> address;
-
-        VirtualAddress tempAddress = VirtualAddress::from_string(pid, address);
-        addresses.push_back(tempAddress);
-        cout << tempAddress << endl;
-    }
+    Simulation simulation;
+    simulation.run(flagOptions);
 
     return EXIT_SUCCESS;
 }
