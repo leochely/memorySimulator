@@ -31,3 +31,4 @@ To observe the Belady's anomaly with my program, you shoud run the following com
 ./mem-sim sim_2 --max-frames 3
 ./mem-sim sim_2 --max-frames 4
 ```
+The fact that increasing the maximum number of frames changes the frames in memory at the same moments of memory request. It then leads to different order of pages swap and therefore may lead to more occurrences of page faults.
