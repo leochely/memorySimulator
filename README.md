@@ -27,7 +27,7 @@ Belady's anomaly occurs when, for a given memory access pattern, the page faults
 
 To observe the Belady's anomaly with my program, you shoudl run the following commands:
 
-```console
+```bash
 ./mem-sim sim_2 --max-frames 3
 ./mem-sim sim_2 --max-frames 4
 ```
