@@ -25,7 +25,7 @@ Nothing special in this project needs to be highlighted.
 
 Belady's anomaly occurs when, for a given memory access pattern, the page faults increases despite an increase in the maximum number of frames. This rule is not true for all memory access patterns and is more likely to be experienced with FIFO strategy.
 
-To observe the Belady's anomaly with my program, you shoudl run the following commands:
+To observe the Belady's anomaly with my program, you shoud run the following commands:
 
 ```bash
 ./mem-sim sim_2 --max-frames 3
