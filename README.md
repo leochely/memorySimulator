@@ -3,7 +3,7 @@
 ## List of files
 
 * main.cpp: calls the flag parser and run the simulation
-* simulation: parse the simulation and processes files then converts the virtual addresses to physical addres in order to perform memory access. Outputs the detailled memory accesses depending on verbose flag and swaps pages in memory depending on strategy flag
+* simulation: parse the simulation file and processes process image files then converts the virtual addresses to physical addresses in order to perform memory accesses. Outputs the detailled memory accesses depending on --verbose flag and swaping strategy depending on --strategy flag
 * flag_parser: reads the flags
 * frame: not used
 * page: holds a page content 
